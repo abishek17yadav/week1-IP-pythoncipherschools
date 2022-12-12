@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms part 3</title>
+    <!-- about :placeholders , required ,radio ,select,others -->
+</head>
+<body>
+    <form action="thankyou.html" method="GET">
+        <!-- get will show url -->
+        <!-- post will not show url    ..both are used in method-->
+        <!-- action will take  to the file u have given when u click to submit -->
+        <label for="username">Username :</label>
+        <input type="text" id="username" name="username" placeholder="enter your name" required><br><br>
+        <!-- input in what type do you want form the user eg: passwoed ,email,text,etc -->
+        <!-- id - to identify uniquely  if u click there u will click in the box  used inside the input  -->
+        <!-- id and for must be same then only u can click and go to the box -->
+        <label for="1">password</label> <input type="password" id="1" name="1" placeholder="enter the password" required><br><br>
+        <label for="2">Email</label><input type="email" id="2" name="2" placeholder="enter your email" required><br><br>
+        <input type="submit" value="sign in">
+        <!-- value is used to write in the box to help the user -->
+        <!-- radio -->
+        <p>select your gender</p>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male"><br><br>
+        <label for="female">female</label>
+        <input type="radio" name="gender" id="female"><br><br>
+        <label for="other">other</label>
+        <input type="radio" name="gender" id="other"><br><br>
+        <!-- select -->
+        <label for="age-group">select your age-group</label>
+        <select name="" id="age-group">
+            <option value="5-10">5-10</option>
+            <option value="11-21">11-21</option>
+            <option value="22-50">22-50</option>
+            <option value="50+">50+</option>
+        </select>
+        <!-- others -->
+        <p>Any queries</p>
+        <textarea name="" id="" cols="30" rows="10" placeholder="type here"></textarea><br>
+        pick color: <input type="color" name="" id=""><br>
+        date : <input type="date" name="" id=""><br>
+        <input type="file" name="" id="">
+
+    </form>
+</body>
+</html>
